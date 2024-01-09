@@ -36,12 +36,12 @@ class TestCalcul(unittest.TestCase):
         self.assertEqual(resultat, 5)
 
     # Test de div by zero
-    # def test_diviser_by_zero(self):
-    #     resultat = self.calc.diviser(15, 0)
-    #     self.assertEqual(resultat, "Division par zéro impossible")
     def test_diviser_by_zero(self):
         resultat = self.calc.diviser(15, 0)
-        self.assertRaises(Exception, self.calc.diviser(15, 0))
+        self.assertEqual(resultat, "Division par zéro impossible")
+    # def test_diviser_by_zero(self):
+    #     resultat = self.calc.diviser(15, 0)
+    #     self.assertRaises(Exception, self.calc.diviser(15, 0))
 
 # Exécuter les tests si le script est exécuté directement
 if __name__ == '__main__':
