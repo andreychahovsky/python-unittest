@@ -8,11 +8,11 @@ class Calcul:
     def multiplier(self, a, b):
         return a * b
 
-    # def diviser(self, a, b):
-    #     if b != 0:
-    #         return a / b
-    #     else:
-    #         return "Division par zéro impossible"
+    def diviser(self, a, b):
+        if b != 0:
+            return a / b
+        else:
+            return "Division par zéro impossible"
         
     
     # def diviser(self, a, b):
